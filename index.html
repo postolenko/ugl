@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title>Denis Postolenko</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -21,7 +20,7 @@
 		
 	<header>
 		<div class="header_site">
-			<div class="header_row">
+			<div class="header_row animate fadeIn">
 				<div class="left">
 					<a href="#" class="logo">
 						<img src="img/logo.jpg" alt="" />
@@ -62,7 +61,7 @@
 									<h4>Москва:</h4>
 								</div>
 								<div>
-									<p><a href="tel:+74959873288">+7 (495) 987-32-88</a>;&nbsp;&nbsp;<a href="tel:+796189098">+7 (961) 890-98</a></p>
+									<p><a href="tel:+74959873288">+7 (495) 987-32-88</a>;&nbsp;&nbsp;<a href="tel:+79618909898">+7 (961) 890-98-98</a></p>
 								</div>
 							</div>
 						</div>
@@ -71,10 +70,10 @@
 				<div class="right">
 					<div class="inline_blocks">
 						<div>
-							<a href="#" class="red_pill">Отправить запрос</a>
+							<a href="#"  data-popup-link = "popup_1" class="red_pill">Отправить запрос</a>
 						</div>
 						<div>
-							<a href="#" class="red_link">Заказать обратный звонок</a>
+							<a href="#"  data-popup-link = "popup_1" class="red_link">Заказать обратный звонок</a>
 						</div>
 						<div>
 							<a href="#" class="lang_link">
@@ -98,7 +97,7 @@
 						<li><a href="#"><span>Каталоги</span></a></li>
 						<li><a href="#"><span>Полезная информация</span></a></li>
 						<li><a href="#"><span>Медиа-центр</span></a></li>
-						<li><a href="#"><span>Контакты</span></a></li>
+						<li><a href="#" class="contact_link"><span>Контакты</span></a></li>
 						<li><a href="#" class="search_link"><i class="search"></i></a></li>
 					</ul>
 				</div>
@@ -120,13 +119,13 @@
 
 			<section class="promo_sect">
 				<div class="main_row">
-					<div class="h1_wrapp">
+					<div class="h1_wrapp animate leftSlice">
 						<h1>Маркетинговые услуги в Китае</h1>
 					</div>
-					<div class="h1_descript">
+					<div class="h1_descript animate leftSlice">
 						<p>Мы предлагаем развитие и продвижение бренда, вывод нового продукта на рынок </p>
 					</div>
-					<div class="thumbnails_1">
+					<div class="thumbnails_1 animate fadeInUp">
 						<div class="thumb_1">
 							<div>
 								<div class="icon_box">
@@ -175,16 +174,16 @@
 
 			<!-- Section 2 -->
 
-			<section>
+			<section class="sect_2">
 				<div class="row">
-					<div class="h2_title">
+					<div class="h2_title animate fadeInUp">
 						<h2>Аналитика рынка</h2>
 					</div>
-					<div class="h2_descript">
+					<div class="h2_descript animate fadeInUp">
 						<h3>Методология маркетинговых исследований</ph3>
 					</div>
 
-					<div class="thumbnails_2">
+					<div class="thumbnails_2 animate fadeInUp">
 						<div class="thumb_2" style="background-image: url(img/thumb_01.jpg);">
 							<div class="thumb_2_ttile">
 								<h3>Количественные</h3>
@@ -244,12 +243,12 @@
 
 			<!-- Section 3 -->
 
-			<section class="blue_bg">
+			<section class="sect_3 blue_bg">
 				<div class="row">
-					<div class="h2_ttile_2">
+					<div class="h2_ttile_2 animate fadeInUp">
 						<h2>Digital продвижение</h2>
 					</div>
-					<div class="thumbnails_3">
+					<div class="thumbnails_3 animate fadeInUp">
 						<div class="thumb_3">
 							<div class="icon_box">
 								<img src="img/icon_05.png" alt="" />
@@ -282,12 +281,12 @@
 
 			<!-- Section 4 -->
 
-			<section>
+			<section class="sect_4">
 				<div class="row">
-					<div class="h2_ttile_2">
+					<div class="h2_ttile_2 animate fadeInUp">
 						<h2>E-commerce</h2>
 					</div>
-					<div class="thumbnails_4">
+					<div class="thumbnails_4 animate fadeInUp">
 						<div class="thumb_4">
 							<img class="bg_image" src="img/thumb_4_01.svg" alt="" />
 							<div class="img_box">
@@ -333,14 +332,14 @@
 
 			<!-- Section 5 -->
 
-			<section class="blue_bg_2">
+			<section class="sect_5 blue_bg_2">
 				<div>
-					<div class="row">
+					<div class="row_2">
 						<div class="h2_ttile_3">
 							<h2>Оставьте заявку и получите БЕСПЛАТНУЮ консультацию</h2>
 						</div>
 						<form>
-							<div class="form_wrapp">
+							<div class="form_wrapp animate fadeInUp">
 								<div class="inputs_wrapp">
 									<div class="input_wrapp">
 										<input type="text" name="name" placeholder="Как к Вам обращаться" required />
@@ -364,12 +363,12 @@
 			<!-- /Section 5 -->
 
 			<!-- Section 6 -->
-			<section>
+			<section class="sect_6">
 				<div class="row">
-					<div class="h2_title">
+					<div class="h2_title animate fadeInUp">
 						<h2>Продвижение бренда - оффлайн реклама в Китае</h2>
 					</div>
-					<div class="thumbnails_5">
+					<div class="thumbnails_5 animate fadeInUp">
 						<div class="thumb_5">
 							<img class="thumb_img" src='img/thumb_5_01.jpg' alt="" />
 							<div class="thumb_5_desc">
@@ -408,12 +407,12 @@
 			<!-- /Section 6 -->
 
 			<!-- Section 7 -->
-			<section class="blue_bg">
+			<section class="sect_7 blue_bg">
 				<div class="row">
-					<div class="h2_ttile_2">
+					<div class="h2_ttile_2 animate fadeInUp">
 						<h2>Наши преимущества</h2>
 					</div>
-					<div class="thumbnails_6">
+					<div class="thumbnails_6 animate fadeInUp">
 						<div class="thumb_6">
 							<div class="icon_box">
 								<img src="img/thumb_6_icon_1.png" alt="">
@@ -452,12 +451,12 @@
 			<!-- /Section 7 -->
 
 			<!-- Section 8 -->
-			<section>
+			<section class="sect_8">
 				<div class="row">
-					<div class="h2_title">
+					<div class="h2_title animate fadeInUp">
 						<h2>Как мы продвигаем</h2>
 					</div>
-					<div class="step_thumbnails">
+					<div class="step_thumbnails animate fadeInUp">
 						<div class="step_thumb">
 							<div class="step_descript">
 								<p>Маркетинговое исследование - анализ емкости рынка, каналов сбыта, конкурентной среды, ЦА</p>
@@ -484,7 +483,7 @@
 						</div>
 						<div class="step_thumb">
 							<div class="step_descript">
-								<p>Разработка маркетинговой стратегии (краткосрочная на 2-4 месяца и долгосрочнаяна 1-2 года)</p>
+								<p>Разработка маркетинговой стратегии (краткосрочная на 2-4 месяца<nr /> и долгосрочнаяна 1-2 года)</p>
 							</div>
 							<div class="num_box">
 								<p>4</p>
@@ -504,14 +503,14 @@
 			<!-- /Section 8 -->
 
 			<!-- Section 9 -->
-			<section class="blue_bg">
+			<section class="sect_9 blue_bg">
 				<div class="row">
-					<div class="h2_ttile_2">
+					<div class="h2_ttile_2 animate fadeInUp">
 						<h2>Типы продукции, с которыми мы работаем:</h2>
 					</div>
-					<div class="thumbnails_7">
+					<div class="thumbnails_7 animate fadeInUp">
 						<div class="thumb_7">
-							<img class="thumb_img" src="img/thumb_5_01.jpg" alt="">
+							<img class="thumb_img" src="img/thumb_7_01.jpg" alt="">
 							<div class="thumb_7_desc">
 								<div>
 									<p>Пищевая продукция (кондитерская продукция, продукция АПК, безалкогольные напитки)</p>
@@ -519,7 +518,7 @@
 							</div>
 						</div>
 						<div class="thumb_7">
-							<img class="thumb_img" src="img/thumb_5_01.jpg" alt="">
+							<img class="thumb_img" src="img/thumb_7_02.jpg" alt="">
 							<div class="thumb_7_desc">
 								<div>
 									<p>Алкогольная продукция (тихие, игристые вина, настойки,бальзамы)</p>
@@ -527,7 +526,7 @@
 							</div>
 						</div>
 						<div class="thumb_7">
-							<img class="thumb_img" src="img/thumb_5_01.jpg" alt="">
+							<img class="thumb_img" src="img/thumb_7_03.jpg" alt="">
 							<div class="thumb_7_desc">
 								<div>
 									<p>Косметическая продукция (уходовая и декоративная косметика, парфюмерия)</p>
@@ -535,7 +534,7 @@
 							</div>
 						</div>
 						<div class="thumb_7">
-							<img class="thumb_img" src="img/thumb_5_01.jpg" alt="">
+							<img class="thumb_img" src="img/thumb_7_04.jpg" alt="">
 							<div class="thumb_7_desc">
 								<div>
 									<p>Промышленные изделия (мед.оборудование)</p>
@@ -543,7 +542,7 @@
 							</div>
 						</div>
 						<div class="thumb_7">
-							<img class="thumb_img" src="img/thumb_5_01.jpg" alt="">
+							<img class="thumb_img" src="img/thumb_7_05.jpg" alt="">
 							<div class="thumb_7_desc">
 								<div>
 									<p>Исследования инфраструктуры и логистики (ж/д, морские, авто перевозки; грузы в контейнерах).</p>
@@ -556,17 +555,17 @@
 			<!-- /Section 9 -->
 
 			<!-- Section 10 -->
-			<section>
+			<section class="sect_10">
 				<div class="row">
-					<div class="h2_ttile_4">
+					<div class="h2_ttile_4 animate leftSlice">
 						<h2>Case-study по проведению Фокус-групп в Китае</h2>
 					</div>
 					<div class="article">
 						<div class="left_col">
-							<div class="img_box">
+							<div class="img_box animate fadeIn">
 								<img src="img/article_01.jpg" alt="" />
 							</div>
-							<div class="img_box">
+							<div class="img_box animate fadeIn">
 								<img src="img/article_02.jpg" alt="" />
 							</div>
 						</div>
@@ -586,14 +585,14 @@
 			<!-- /Section 10 -->
 
 			<!-- Section 5 -->
-			<section class="blue_bg_2">
+			<section class="sect_5 blue_bg_2">
 				<div>
-					<div class="row">
+					<div class="row_2">
 						<div class="h2_ttile_3">
 							<h2>Оставьте заявку и получите БЕСПЛАТНУЮ консультацию</h2>
 						</div>
 						<form>
-							<div class="form_wrapp">
+							<div class="form_wrapp animate fadeInUp">
 								<div class="inputs_wrapp">
 									<div class="input_wrapp">
 										<input type="text" name="name" placeholder="Как к Вам обращаться" required />
@@ -621,21 +620,161 @@
 	<!-- Footer -->
 
 		<footer class="footer_section">
-
+			<div class="row">
+				<div class="footeer_top_row">
+					<div class="col_1">
+						<a href="#" class="logo_footer">
+							<img src="img/logo_footer.png">
+						</a>
+					</div>
+					<div class="col_2">
+						<div class="contact_thumb_2_wrapp">
+							<div class="contact_thumb_2">
+								<div class="contact_thumb_col_1">
+									<div class="icon_box">
+										<i class="map_pin"></i>
+									</div>
+								</div>
+								<div class="contact_thumb_col_2">
+									<h3>E-mail:</h3>
+									<ul>
+										<li><a href="mailto:uglc.ru@gmail.com">uglc.ru@gmail.com</a></li>
+										<li><a href="mailto:info@uglc.ru">info@uglc.ru</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="contact_thumb_2">
+								<div class="contact_thumb_col_1">
+									<div class="icon_box">
+										<i class="call"></i>
+									</div>
+								</div>
+								<div class="contact_thumb_col_2">
+									<div class="contact_row">
+										<div>
+											<h3>Пекин:</h3>
+										</div>
+										<div>
+											<p><a href="tel:+86 (10) 58695622">+861058695622</a></p>
+										</div>
+									</div>
+									<div class="contact_row">
+										<div>
+											<h3>Москва:</h3>
+										</div>
+										<div>
+											<p><a href="tel:+74959873288">+7 (495) 987-32-88</a></p>
+											<p><a href="tel:+79618909898">+7 (961) 890-98-98</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col_3">
+						<div class="inline_blocks_2">
+							<div>
+								<div class="align_center">
+									<p><a href="#" data-popup-link = "popup_1" class="red_pill">Отправить запрос</a></p>
+									<p><a href="#" data-popup-link = "popup_1" class="red_link">Заказать обратный звонок</a></p>
+								</div>
+							</div>
+							<div>
+								<a href="#" class="lang_link lang_link_2">
+									<div class="flag_box">
+										<img src="img/eng.jpg" alt="" / >
+									</div>
+									<div class="lang_text">
+										<span>Eng</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer_nav_wrapp">
+					<ul class="footer_nav">
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Алгоритм работы</a></li>
+						<li><a href="#">Каталоги</a></li>
+						<li><a href="#">Полезная информация</a></li>
+						<li><a href="#">Медиа-центр</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="seo_text_wrapp">
+					<div class="col">
+						<div class="seo_text">
+							<ul>
+								<li><a href="#">ТНП и КНР</a></li>
+								<li><a href="#">Продукция китайского автопрома</a></li>
+								<li><a href="#">Как открыть компания в Китае и Гонконге</a></li>
+								<li><a href="#">Стройматериалы из КНР</a></li>
+								<li><a href="#">Производсто ламп</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="seo_text">
+							<ul>
+								<li><a href="#">Финансы и банки Китая</a></li>
+								<li><a href="#">Оборудование из Китая</a></li>
+								<li><a href="#">Импорт и экспорт</a></li>
+								<li><a href="#">Морские порты Китая</a></li>
+								<li><a href="#">Карты Китая</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="seo_text">
+							<ul>
+								<li><a href="#">Недвижимость в Китае</a></li>
+								<li><a href="#">Телефонные коды Китая</a></li>
+								<li><a href="#">Связь и телефон в Китае</a></li>
+								<li><a href="#">Китай - страна чудес</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright_wrapp">
+					<p>UGLC.com © 2020. Bсе права защищены.</p>
+				</div>
+			</div>
 		</footer>
 
 	<!-- /Footer -->
 
 	</div>
 
+	<!-- Popups -->
+
+	<div class="popup popup_sect" data-popup = "popup_1">
+		<div class="row">
+			<div class="popup_content">
+				<button type="button" class="close_popup"></button>
+				<h3>Заказать звонок</h3>
+				<div class="popup_form_wrapp">
+					<div class="input_wrapp">
+						<input type="text" placeholder="Ваше имя" name="name" />
+					</div>
+					<div class="input_wrapp">
+						<input type="tel" placeholder="Ваш телефон" name="tel" />
+					</div>
+					<div class="submit_wrapp">
+						<button type="submit" class="red_pill">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popups -->
+
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css"> -->
 	<script src="vendors/js/jquery.js"></script>
-	<!-- <script src="slick/slick.js"></script> -->
-	<!-- <script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
-	<!-- <script src="vendors/js/jquery.fancybox.js"></script> -->
+	<script src="vendors/js/tel_mask.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>
