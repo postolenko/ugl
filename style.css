@@ -348,7 +348,7 @@ a:active {
 }
 
 .header_row .center {
-    width: calc(100% - 830px);
+    width: calc(100% - 850px);
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
@@ -356,7 +356,7 @@ a:active {
 }
 
 .header_row .right {
-    width: 510px;
+    width: 530px;
 }
 
 .logo {
