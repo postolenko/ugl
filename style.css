@@ -844,6 +844,39 @@ textarea:focus {
     border-bottom: 1px solid transparent;
 }
 
+.smart_btn_wrapp {
+    display: none;
+}
+
+.smart_btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #ff000c;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.smart_btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.tel_white {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url(img/telephone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .main_nav_wrapp {
     background-color: #004a9e;
@@ -1069,6 +1102,10 @@ a.search_link {
 
 /* ----- / Responsive Menu Button ------ */
 
+.resp_link {
+    display: none;
+}
+
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
@@ -1254,6 +1291,7 @@ a.search_link {
 
 .h2_title h2 {
     display: inline;
+    text-align: center;
     padding: 0 40px;
 }
 
@@ -1441,6 +1479,7 @@ a.search_link {
 
 .sect_4 {
     padding: 36px 0 24px 0;
+    overflow: hidden;
 }
 
 .thumbnails_4 {
