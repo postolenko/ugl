@@ -98,6 +98,20 @@
 
 	/*-- /Section 5 --*/
 
+	/*-- Footer --*/
+
+	.footeer_top_row .col_1 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.footeer_top_row .col_2 {
+	    width: calc(100% - 315px);
+	    padding: 10px 10px 10px 0;
+	}
+
+	/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 1240px) {
@@ -205,6 +219,8 @@ h1 {
 
 .thumb_1 {
     margin: 35px 0;
+    width: 50%;
+    max-width: 50%;
 }
 
 /*-- /Section 1 --*/
@@ -251,6 +267,27 @@ h1 {
 }
 
 /*-- /Section 8 --*/
+
+/*-- Footer --*/
+
+.contact_thumb_2_wrapp .contact_thumb_2:nth-child(1) {
+    width: 100%;
+    padding: 0;
+}
+
+.contact_thumb_2_wrapp .contact_thumb_2:nth-child(2) {
+    width: 100%;
+    padding: 0;
+}
+
+.footer_nav {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+/*-- /Footer --*/
 
 }
 
@@ -405,7 +442,7 @@ h1 {
 
 	.step_thumb {
 	    left: 0;
-	    margin: 28px 0;
+	    margin: 20px 0;
 	}
 
 	.step_thumb:last-child {
@@ -423,16 +460,53 @@ h1 {
 	.step_thumb .step_descript {
 		width: calc(100% - 77px);
 	    text-align: left;
-	    padding: 10px 0 10px 20px;
+	    padding: 10px 0 10px 15px !important;
 	    order: 2;
 	}
 
 	.step_descript p {
-	    font-size: 12px;
-	    line-height: 27px;
+		font-size: 11px;
+		line-height: 24px;
 	}
 
 	/*-- /Section 8 --*/
+
+	/*-- Footer --*/
+
+	.footeer_top_row .col_2 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.footeer_top_row .col_3 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.inline_blocks_2 {
+	    align-items: flex-start;
+	    -webkit-align-items: flex-start;
+	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	}
+
+	.seo_text_wrapp .col:nth-child(1) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.seo_text_wrapp .col:nth-child(2) {
+		width: 100%;
+	    padding: 10px 0;
+	}
+
+	.seo_text_wrapp .col:nth-child(3) {
+		width: 100%;
+	    padding: 10px 0;
+	    text-align: left;
+	}
+
+	/*-- /Footer --*/
 
 }
 
@@ -699,6 +773,10 @@ h1 {
 
 @media only screen and (max-width: 440px) {
 
+	h1 {
+	    font-size: 49px;
+	}
+
 	/*-- Section 1 --*/
 
 	.thumbnails_1 {
@@ -732,5 +810,13 @@ h1 {
 	}
 
 	/*-- /Section 7 --*/
+
+	/*-- Footer --*/
+
+	.inline_blocks_2 > div:nth-child(2) {
+		display: none;
+	}
+
+	/*-- /Footer --*/
 
 }
