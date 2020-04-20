@@ -6,22 +6,19 @@ function getAnimation() {
   });
 }
 
-$(window).load(function() {
-
-
-
-});
+var w = window,
+d = document,
+e = d.documentElement,
+g = d.getElementsByTagName('body')[0],
+bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 $(window).resize(function() {
-
-getAnimation();
-
+  getAnimation();
+  bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 });
 
 $(document).scroll(function() {
-
-getAnimation();
-
+  getAnimation();
 });
 
 $(document).ready(function() {
@@ -50,11 +47,12 @@ $(document).ready(function() {
           "left" : 0,
           "bottom" : 0,
           "padding-right" : scrollWidth + "px"
-      });      
+      });
+      $(".popup_bg").fadeIn(300);
       $("[data-popup = '"+ popupName +"']").fadeIn(300);
   });
 
-  $(".close_popup").on("click", function(e) {
+  $(".close_popup, .popup_bg").on("click", function(e) {
       e.preventDefault();
       curTop = $("body").css("top");
       curTop = Math.abs(parseInt(curTop, 10));
@@ -63,6 +61,7 @@ $(document).ready(function() {
           $("html").scrollTop(curTop);
       }
       $("body").removeClass("fixed");
+      $(".popup_bg").fadeOut(300);
       $(this).closest("[data-popup]").fadeOut(300);
   });
 
@@ -75,6 +74,7 @@ $(document).ready(function() {
               $("html").scrollTop(curTop);
           }
           $("body").removeClass("fixed");
+          $(".popup_bg").fadeOut(300);
           $("[data-popup]").fadeOut(300);
       }
   });
@@ -93,7 +93,7 @@ $(document).ready(function() {
             $(this).removeClass("active");
         }
     });
-    
+
     $("#resp_nav .close_btn").on("click", function(e) {
         e.preventDefault();
         $("#resp_nav").fadeOut(300);
@@ -102,7 +102,8 @@ $(document).ready(function() {
 
     $(this).keydown(function(eventObject){
         if (eventObject.which == 27 &&
-            $("#resp_nav").is(":visible") ) {
+            $("#resp_nav").is(":visible") &&
+            bodyWidth <= 767) {
                 $("#resp_nav").fadeOut(300);
                 $(".respmenubtn").removeClass("active");
         }

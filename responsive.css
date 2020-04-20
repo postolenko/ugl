@@ -89,6 +89,14 @@
 	    margin: 15px 0;
 	}
 
+	/*-- Header --*/
+
+	.main_nav li a {
+	    padding: 17px 10px;
+	}
+
+	/*-- /Header --*/
+
 	/*-- Section 5 --*/
 
 	.h2_ttile_3 h2 {
@@ -199,6 +207,18 @@
 
 @media only screen and (max-width: 1024px) {
 
+/*-- Header --*/
+
+.main_nav li a span {
+    font-size: 13px;
+}
+
+a.search_link {
+    padding: 21px 12px 10px 12px !important;
+}
+
+/*-- /Header --*/
+
 /*-- Section 1 --*/
 
 .promo_sect {
@@ -246,6 +266,19 @@ h1 {
 
 @media only screen and (max-width: 900px) {
 
+/*-- Header --*/
+
+.main_nav li a {
+    padding: 17px 8px;
+}
+
+.main_nav li a span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/*-- /Header --*/
+
 /*-- Section 4 --*/
 
 .thumb_4:nth-child(2n+1) .bg_image {
@@ -292,6 +325,10 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
+
+	.wrapper {
+	    padding-top: 70px;
+	}
 
 	/*-- Header --*/
 
@@ -379,8 +416,12 @@ h1 {
 		display: block;
 		padding: 5px 0;
 		text-align: center;
+	}
+
+	.main_nav li a span {
 		font-size: 22px;
-		line-height: 22px;
+		line-height: 42px;
+		font-weight: 500;
 	}
 
 	/*-- /Header --*/
@@ -907,4 +948,10 @@ h1 {
 
 	/*-- /Footer --*/
 
+}
+
+@media only screen and (min-width: 768px) {
+	#resp_nav {
+		display: block !important;
+	}
 }
