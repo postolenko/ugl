@@ -307,6 +307,10 @@ textarea:focus {
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
 
+.header_site {
+    background-color: #fff;
+}
+
 .header_row {
     max-width: 1900px;
     margin: 0 auto;
@@ -541,6 +545,17 @@ textarea:focus {
 }
 
 .logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo_resp {
+    display: none;
+    width: 66px;
+}
+
+.logo_resp img {
     display: block;
     width: 100%;
     height: auto;
@@ -1004,6 +1019,38 @@ a.search_link {
     background-color: #003f86;
 }
 
+.close_btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-image: url(img/close_white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.close_btn_wrapp {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main_nav_wrapp .close_btn_wrapp {
+    background-color: #003f86;
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.close_btn_wrapp .close_btn {
+    margin-left: -5px;
+}
+
 .search {
     display: inline-block;
     width: 18px;
@@ -1025,7 +1072,6 @@ a.search_link {
     background: transparent;
     cursor: pointer;
     position: relative;
-    top: 6px;
     z-index: 11;
     border: 1px solid transparent;
 }
@@ -1034,7 +1080,7 @@ a.search_link {
     display: block;
     width: 27px;
     height: 2px;
-    background: #466896;
+    background: #0c6fe0;
     margin: 0 auto 7px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
@@ -1067,7 +1113,7 @@ a.search_link {
 }
 
 .respmenubtn:hover span {
-    background: #e9ba5f;
+    background: #ff000c
 }
 
 .respmenubtn.active span {
@@ -1075,7 +1121,7 @@ a.search_link {
     width: 35px;
     top: 2px;
     left: 0;
-    background: #e9ba5f;
+    background: #ff000c;
 }
 
 .respmenubtn.active span:last-child {

@@ -45,7 +45,7 @@
 		margin: 5px -15px;
 	}
 
-	.inline_blocks > div:nth-child(2) {
+	.tab_novisible {
 		display: none;
 	}
 
@@ -295,16 +295,92 @@ h1 {
 
 	/*-- Header --*/
 
+	.header_site {
+		width: 100%;
+		z-index: 4;
+		position: fixed;
+		top: 0;
+		left: 0;
+		-webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.4);
+		-moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,.4);
+		box-shadow: 0 3px 5px 0 rgba(0,0,0,.4);
+	}
+
+	.header_row {
+	    padding: 5px 15px;
+	}
+
 	.header_row .left {
-	    width: 250px;
+	    width: 200px;
 	}
 
 	.header_row .right {
-	    width: calc(100% - 250px);
+	    width: calc(100% - 200px);
+	    padding-top: 8px;
 	}
 
 	.header_row {
 	    padding: 8px 15px;
+	}
+
+	.respmenubtn {
+		display: inline-block;
+	}
+
+	.inline_blocks {
+	    margin: 0 -15px;
+	}
+
+	.inline_blocks .red_link {
+	    margin: 7px 0;
+	}
+
+	.desc_box {
+		display: none;
+	}
+
+	.smart_btn_wrapp {
+		display: block;
+	}
+
+	#resp_nav {
+		/*display: block;*/
+		display: none;
+		width: 100%;
+		height: 100vh;
+		overflow-y: auto;
+		margin: 0;
+		padding: 70px 0 50px 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 13;
+		background-color: #003f86;
+	}
+
+	.main_nav_wrapp .close_btn_wrapp {
+	    display: block;
+	}
+
+	.main_nav {
+		display: block;
+		box-shadow: none;
+		border-radius: 0;
+		padding-bottom: 30px;
+	}
+
+	.main_nav li {
+		display: block;
+	    padding: 5px;
+	}
+
+	.main_nav li a {
+		white-space: normal;
+		display: block;
+		padding: 5px 0;
+		text-align: center;
+		font-size: 22px;
+		line-height: 22px;
 	}
 
 	/*-- /Header --*/
@@ -522,10 +598,6 @@ h1 {
 	    width: calc(100% - 190px);
 	}
 
-	.inline_blocks > div {
-	    padding: 0 10px;
-	}
-
 	.header_row .red_pill {
 	    padding: 12px 15px;
 	}
@@ -624,14 +696,6 @@ h1 {
 
 	.header_row .right {
 	    width: calc(100% - 190px);
-	}
-
-	.desc_box {
-		display: none;
-	}
-
-	.smart_btn_wrapp {
-		display: block;
 	}
 
 	.inline_blocks > div {
@@ -775,6 +839,30 @@ h1 {
 
 	h1 {
 	    font-size: 49px;
+	}
+
+	.header_row .left {
+	    width: 80px;
+	}
+
+	.header_row .right {
+	    width: calc(100% - 80px);
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.logo_resp {
+	    display: block;
+	}
+
+	.inline_blocks {
+	    margin: 0 -10px;
+	}
+
+	.inline_blocks > div {
+	    padding: 0 10px;
 	}
 
 	/*-- Section 1 --*/
