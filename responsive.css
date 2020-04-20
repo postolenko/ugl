@@ -2,21 +2,6 @@
 
 	/*-- Header --*/
 
-	.header_row .left {
-	    /*width: 320px;*/
-	    /*outline: 1px solid red;*/
-	}
-
-	.header_row .center {
-	    /*width: 320px;*/
-	    /*outline: 1px solid red;*/
-	}
-
-	.header_row .right {
-	    /*width: 320px;*/
-	    /*outline: 1px solid red;*/
-	}
-
 	.contacts_thumbnails {
 	    padding: 14px 0 14px 15px;
 	}
@@ -918,7 +903,6 @@ h1 {
 	    margin: 25px 0;
 	    padding: 0;
 	}
-
 
 	.thumb_1:nth-child(1) .icon_box::before {
 	    bottom: 0;
