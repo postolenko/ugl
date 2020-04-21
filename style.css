@@ -2598,11 +2598,12 @@ body.fixed {
 .popup_bg {
     display: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     background: rgba(0, 74, 158, .9);
+    z-index: 3;
 }
 
 .close_popup {
