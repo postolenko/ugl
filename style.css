@@ -2603,7 +2603,7 @@ body.fixed {
     top: 0;
     left: 0;
     background: rgba(0, 74, 158, .9);
-    z-index: 3;
+    z-index: 4;
 }
 
 .close_popup {
