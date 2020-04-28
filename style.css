@@ -1762,7 +1762,7 @@ a.search_link {
     -webkit-align-items: center;
     position: relative;
     left: 2%;
-    margin: 66px 0;
+    margin: 24px 0;
 }
 
 .step_thumb:last-child {
@@ -1778,7 +1778,7 @@ a.search_link {
     background-size: contain;
     background-position: center;
     position: absolute;
-    bottom: -68px;
+    bottom: -48px;
     left: -30px;
 }
 
@@ -1803,6 +1803,8 @@ a.search_link {
     background-color: rgb(89, 166, 253);
     width: 117px;
     height: 117px;
+    position: relative;
+    z-index: 2;
 }
 
 .step_thumb .num_box p {
